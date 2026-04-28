@@ -1,0 +1,723 @@
+<html class="light" lang="pt-BR"><head></head><body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden selection:bg-primary-container selection:text-white">```html
+
+
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>OpenClube - O Clube Mais Inovador do Mundo</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#002347",
+                        "secondary-fixed": "#e4e2e2",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "surface-container": "#edeeef",
+                        "surface-container-highest": "#e1e3e4",
+                        "background": "#f8f9fa",
+                        "error": "#ba1a1a",
+                        "secondary": "#5e5e5e",
+                        "surface-container-low": "#f3f4f5",
+                        "on-background": "#191c1d",
+                        "on-primary-container": "#718bb5",
+                        "primary-fixed-dim": "#adc8f5",
+                        "on-surface-variant": "#43474e",
+                        "on-primary-fixed-variant": "#2c486d",
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "on-tertiary-container": "#898a8a",
+                        "tertiary-fixed": "#e3e2e2",
+                        "outline": "#74777f",
+                        "inverse-surface": "#2e3132",
+                        "inverse-on-surface": "#f0f1f2",
+                        "secondary-container": "#e1dfdf",
+                        "on-secondary": "#ffffff",
+                        "surface-container-high": "#e7e8e9",
+                        "primary-fixed": "#d4e3ff",
+                        "on-secondary-fixed-variant": "#464747",
+                        "surface": "#f8f9fa",
+                        "on-surface": "#191c1d",
+                        "on-primary": "#ffffff",
+                        "primary": "#000d21",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#f8f9fa",
+                        "on-secondary-container": "#626263",
+                        "on-tertiary-fixed-variant": "#464747",
+                        "outline-variant": "#c4c6cf",
+                        "surface-dim": "#d9dadb",
+                        "on-error": "#ffffff",
+                        "tertiary": "#0b0d0d",
+                        "on-primary-fixed": "#001c3a",
+                        "on-error-container": "#93000a",
+                        "inverse-primary": "#adc8f5",
+                        "surface-tint": "#455f87",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#e1e3e4",
+                        "secondary-fixed-dim": "#c7c6c6",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#212323",
+                        "on-tertiary-fixed": "#1a1c1c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-sm": "8px",
+                        "container-max": "1200px",
+                        "stack-lg": "32px",
+                        "gutter": "24px",
+                        "section-padding": "80px",
+                        "stack-md": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Manrope"],
+                        "headline-xl": ["Manrope"],
+                        "headline-md": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "label-sm": ["Manrope"],
+                        "body-lg": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(192, 192, 192, 0.3);
+            box-shadow: 0 10px 20px -5px rgba(0, 35, 71, 0.05);
+        }
+        .btn-primary {
+            background: linear-gradient(90deg, #002347 0%, #003366 100%);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 35, 71, 0.2);
+        }
+        .btn-secondary {
+            border: 1px solid #C0C0C0;
+            color: #002347;
+            background: transparent;
+            transition: all 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background: rgba(0, 35, 71, 0.05);
+            border-color: #002347;
+        }
+        .text-gradient {
+            background: linear-gradient(90deg, #002347 0%, #004080 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-grid {
+            background-image: 
+                linear-gradient(to right, rgba(0, 35, 71, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(0, 35, 71, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+    </style>
+<!-- 1. MENU PRINCIPAL -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-lg border-b border-slate-200/50 dark:border-slate-800/50 shadow-[0_10px_20px_-5px_rgba(0,35,71,0.05)] transition-all duration-300">
+<div class="max-w-container-max mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-8">
+<a class="text-2xl font-black tracking-tighter text-[#002347] dark:text-white flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">generating_tokens</span>
+                    OpenClube
+                </a>
+<div class="hidden md:flex items-center gap-6">
+<a class="font-label-sm text-[#002347] dark:text-blue-400 border-b-2 border-[#002347] dark:border-blue-400 pb-1 hover:opacity-80 transition-all duration-200" href="#inicio">Início</a>
+<a class="font-label-sm text-slate-600 dark:text-slate-400 hover:text-[#002347] dark:hover:text-white transition-colors hover:opacity-80 duration-200" href="#como-funciona">Como Funciona</a>
+<a class="font-label-sm text-slate-600 dark:text-slate-400 hover:text-[#002347] dark:hover:text-white transition-colors hover:opacity-80 duration-200" href="#empresas">Para Empresas</a>
+<a class="font-label-sm text-slate-600 dark:text-slate-400 hover:text-[#002347] dark:hover:text-white transition-colors hover:opacity-80 duration-200" href="#usuarios">Para Usuários</a>
+<a class="font-label-sm text-slate-600 dark:text-slate-400 hover:text-[#002347] dark:hover:text-white transition-colors hover:opacity-80 duration-200" href="#beneficios">Benefícios</a>
+<a class="font-label-sm text-slate-600 dark:text-slate-400 hover:text-[#002347] dark:hover:text-white transition-colors hover:opacity-80 duration-200" href="#contato">Contato</a>
+</div>
+</div>
+<div class="hidden lg:flex items-center gap-4">
+<a class="font-label-sm text-on-surface-variant hover:text-primary-container transition-colors" href="#">Entrar</a>
+<a class="font-label-sm btn-secondary px-4 py-2 rounded-lg" href="#">Cadastre-se</a>
+<div class="h-6 w-px bg-outline-variant mx-2"></div>
+<a class="font-label-sm btn-primary px-4 py-2 rounded-lg text-white" href="#">Quero ser parceiro</a>
+<a class="font-label-sm bg-surface-tint text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition-all" href="#">Quero benefícios</a>
+</div>
+<button class="md:hidden text-primary-container p-2">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<!-- 2. BANNER PRINCIPAL (Hero) -->
+<header class="relative pt-32 pb-section-padding min-h-[921px] flex items-center bg-grid overflow-hidden" id="inicio">
+<div class="absolute inset-0 z-0">
+<div class="absolute top-20 right-0 w-[800px] h-[800px] bg-primary-fixed-dim/20 rounded-full blur-[120px] mix-blend-multiply opacity-50"></div>
+<div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-surface-tint/10 rounded-full blur-[100px] mix-blend-multiply"></div>
+</div>
+<div class="max-w-container-max mx-auto px-6 w-full relative z-10 grid lg:grid-cols-2 gap-stack-lg items-center">
+<div class="flex flex-col gap-stack-lg">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary-fixed/50 border border-primary-fixed-dim w-fit">
+<span class="material-symbols-outlined text-sm text-primary-container">lightbulb</span>
+<span class="font-label-sm text-primary-container">Inovação e Inteligência Financeira</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary-container">
+                    O Clube Mais Inovador do Mundo
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+<span class="font-semibold text-primary-container">Transformando benefícios em conexões reais e oportunidades financeiras.</span> Redefinimos a lealdade através de uma plataforma pioneira que gera valor exponencial para empresas e liberdade econômica para usuários.
+                </p>
+<div class="flex flex-wrap items-center gap-4 pt-4">
+<a class="btn-primary px-8 py-4 rounded-xl font-label-sm text-white flex items-center gap-2" href="#empresas">
+                        Sou uma empresa
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+<a class="btn-secondary px-8 py-4 rounded-xl font-label-sm flex items-center gap-2" href="#usuarios">
+                        Quero liberdade econômica
+                    </a>
+</div>
+<div class="grid grid-cols-2 gap-4 pt-8 border-t border-outline-variant/30 mt-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-surface-tint" style="font-variation-settings: 'FILL' 1;">public</span>
+<span class="font-label-sm text-on-surface-variant">Conexões Globais</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-surface-tint" style="font-variation-settings: 'FILL' 1;">trending_up</span>
+<span class="font-label-sm text-on-surface-variant">Valorização Real</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-surface-tint" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+<span class="font-label-sm text-on-surface-variant">Crescimento Acelerado</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-surface-tint" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-sm text-on-surface-variant">Inteligência Financeira</span>
+</div>
+</div>
+</div>
+<div class="relative hidden lg:block">
+<div class="glass-panel rounded-2xl p-6 relative z-10 w-4/5 ml-auto transform translate-x-4 translate-y-8">
+<img alt="mockup de aplicativo financeiro no celular com gráficos e cartões" class="w-full rounded-lg shadow-sm" data-alt="modern smartphone showing a fintech dashboard interface with subtle blue and silver accents held by a hand in a bright modern office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBB2xgJzfHeWbwVbLw4t87zcNQZ5jlqYk-1pucRj6fonAsOi7Uy0qqu8eTr8o2bAx6LWNl_SLPqSru1MHBAbUXoxq91-tHPV5ulCIzSmerAExBdQVVB8mbqBoBbAchxCPLl1Zw9jh8NvoCZ_NtziRrQZ4f3TgLFW85EgRCCBTOopTu-WriW2m1cuJGbuSwdaPrDgXb3R5290XbAkg-sNjZMNtL88ItrfSooCVk8UWrXuvrkIQUjYFbH43tzBqvyARt20xWz4oVMhQ"/>
+<!-- Floating Badge -->
+<div class="absolute -left-12 top-1/4 glass-panel p-4 rounded-xl flex items-center gap-4">
+<div class="w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary-container">trending_up</span>
+</div>
+<div>
+<p class="font-label-sm text-on-surface-variant text-xs">Valorização</p>
+<p class="font-headline-md text-primary-container text-lg">+45%</p>
+</div>
+</div>
+<!-- Floating Badge 2 -->
+<div class="absolute -right-8 bottom-1/4 glass-panel p-4 rounded-xl flex items-center gap-3">
+<div class="w-10 h-10 bg-surface-container rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-surface-tint">account_balance</span>
+</div>
+<div>
+<p class="font-label-sm text-primary-container text-sm">Royalties Constantes</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- IMPACT PHRASE -->
+<div class="bg-primary-container py-8 overflow-hidden">
+<div class="max-w-container-max mx-auto px-6 text-center">
+<p class="font-headline-md text-headline-md text-white/90">"Transforme clientes em relacionamentos duradouros"</p>
+</div>
+</div>
+<!-- 3. COMO FUNCIONA -->
+<section class="py-section-padding bg-surface" id="como-funciona">
+<div class="max-w-container-max mx-auto px-6">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary-container mb-4">Como a OpenClube funciona</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Um ecossistema tecnológico e pioneiro focado em inteligência financeira para todos os envolvidos.</p>
+</div>
+<div class="grid md:grid-cols-2 gap-gutter">
+<!-- Empresas -->
+<div class="glass-panel p-8 rounded-2xl relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-fixed-dim/20 rounded-bl-full -z-10 transition-transform group-hover:scale-110"></div>
+<div class="flex items-center gap-4 mb-8">
+<div class="w-12 h-12 bg-primary-container text-white rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined">storefront</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary-container">Jornada das Empresas</h3>
+</div>
+<div class="space-y-6 relative before:absolute before:inset-0 before:ml-[15px] before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-outline-variant/50 before:to-transparent">
+<div class="relative flex items-start gap-4">
+<div class="w-8 h-8 rounded-full bg-white border-2 border-primary-container text-primary-container flex items-center justify-center font-label-sm z-10 bg-clip-padding shrink-0">1</div>
+<div>
+<h4 class="font-label-sm text-primary-container text-base mb-1">Cadastre sua empresa</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Crie seu perfil na plataforma para acessar nosso ecossistema de inteligência.</p>
+</div>
+</div>
+<div class="relative flex items-start gap-4">
+<div class="w-8 h-8 rounded-full bg-white border-2 border-primary-container text-primary-container flex items-center justify-center font-label-sm z-10 bg-clip-padding shrink-0">2</div>
+<div>
+<h4 class="font-label-sm text-primary-container text-base mb-1">Liste seus Títulos</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Disponibilize benefícios exclusivos e atraia consumidores de alto valor.</p>
+</div>
+</div>
+<div class="relative flex items-start gap-4">
+<div class="w-8 h-8 rounded-full bg-white border-2 border-primary-container text-primary-container flex items-center justify-center font-label-sm z-10 bg-clip-padding shrink-0">3</div>
+<div>
+<h4 class="font-label-sm text-primary-container text-base mb-1">Atraia e Fidelize</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Conecte-se com novos clientes e fortaleça o relacionamento com sua base atual.</p>
+</div>
+</div>
+<div class="relative flex items-start gap-4">
+<div class="w-8 h-8 rounded-full bg-white border-2 border-primary-container text-primary-container flex items-center justify-center font-label-sm z-10 bg-clip-padding shrink-0">4</div>
+<div>
+<h4 class="font-label-sm text-primary-container text-base mb-1">Ganhe Royalties de 1%</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Fature 1% de royalties em TODAS as transações de compra e venda dos seus títulos realizadas pelos usuários.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Usuários -->
+<div class="glass-panel p-8 rounded-2xl relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-32 h-32 bg-surface-tint/10 rounded-bl-full -z-10 transition-transform group-hover:scale-110"></div>
+<div class="flex items-center gap-4 mb-8">
+<div class="w-12 h-12 bg-surface-tint text-white rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined">person</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary-container">Jornada dos Usuários</h3>
+</div>
+<div class="space-y-6 relative before:absolute before:inset-0 before:ml-[15px] before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-outline-variant/50 before:to-transparent">
+<div class="relative flex items-start gap-4">
+<div class="w-8 h-8 rounded-full bg-white border-2 border-surface-tint text-surface-tint flex items-center justify-center font-label-sm z-10 bg-clip-padding shrink-0">1</div>
+<div>
+<h4 class="font-label-sm text-primary-container text-base mb-1">Entre no App</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Acesso gratuito a um universo de oportunidades financeiras e benefícios.</p>
+</div>
+</div>
+<div class="relative flex items-start gap-4">
+<div class="w-8 h-8 rounded-full bg-white border-2 border-surface-tint text-surface-tint flex items-center justify-center font-label-sm z-10 bg-clip-padding shrink-0">2</div>
+<div>
+<h4 class="font-label-sm text-primary-container text-base mb-1">Compre Títulos</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Adquira direitos a benefícios incríveis com apenas alguns cliques.</p>
+</div>
+</div>
+<div class="relative flex items-start gap-4">
+<div class="w-8 h-8 rounded-full bg-white border-2 border-surface-tint text-surface-tint flex items-center justify-center font-label-sm z-10 bg-clip-padding shrink-0">3</div>
+<div>
+<h4 class="font-label-sm text-primary-container text-base mb-1">Use ou Negocie</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Desfrute da experiência no parceiro ou negocie o título com outros usuários.</p>
+</div>
+</div>
+<div class="relative flex items-start gap-4">
+<div class="w-8 h-8 rounded-full bg-white border-2 border-surface-tint text-surface-tint flex items-center justify-center font-label-sm z-10 bg-clip-padding shrink-0">4</div>
+<div>
+<h4 class="font-label-sm text-primary-container text-base mb-1">Lucro e Valorização</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Obtenha lucro revendendo títulos muito procurados em nosso mercado inteligente.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. PARA EMPRESAS -->
+<section class="py-section-padding relative" id="empresas">
+<div class="max-w-container-max mx-auto px-6">
+<div class="grid lg:grid-cols-2 gap-stack-lg items-center">
+<div class="order-2 lg:order-1">
+<div class="grid grid-cols-2 gap-4">
+<div class="glass-panel p-6 rounded-xl flex flex-col gap-4">
+<div class="w-10 h-10 bg-primary-fixed rounded-full flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined">rocket_launch</span>
+</div>
+<h4 class="font-label-sm text-primary-container">Parceria e Crescimento</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Cresça em um ecossistema que valoriza a inovação e o sucesso mútuo.</p>
+</div>
+<div class="glass-panel p-6 rounded-xl flex flex-col gap-4 mt-8">
+<div class="w-10 h-10 bg-primary-fixed rounded-full flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined">account_balance_wallet</span>
+</div>
+<h4 class="font-label-sm text-primary-container">1% de Royalties em TUDO</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Receba 1% sobre TODAS as transações dos seus títulos, criando um ativo financeiro real para a empresa.</p>
+</div>
+<div class="glass-panel p-6 rounded-xl flex flex-col gap-4">
+<div class="w-10 h-10 bg-primary-fixed rounded-full flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined">loyalty</span>
+</div>
+<h4 class="font-label-sm text-primary-container">Fidelização Tecnológica</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Transforme consumidores em defensores através de benefícios dinâmicos e valorizáveis.</p>
+</div>
+<div class="glass-panel p-6 rounded-xl flex flex-col gap-4 mt-8">
+<div class="w-10 h-10 bg-primary-fixed rounded-full flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined">payments</span>
+</div>
+<h4 class="font-label-sm text-primary-container">Receita antecipada</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Gere caixa antes mesmo do cliente consumir o serviço.</p>
+</div>
+<div class="glass-panel p-6 rounded-xl flex flex-col gap-4">
+<div class="w-10 h-10 bg-primary-fixed rounded-full flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined">public</span>
+</div>
+<h4 class="font-label-sm text-primary-container">Conexões sem fronteiras</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Alcance um público engajado e aberto a novas propostas de valor.</p>
+</div>
+<div class="glass-panel p-6 rounded-xl flex flex-col gap-4 mt-8">
+<div class="w-10 h-10 bg-primary-fixed rounded-full flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined">dashboard</span>
+</div>
+<h4 class="font-label-sm text-primary-container">Gestão Financeira</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Painel inteligente para acompanhar não apenas vendas, mas o volume de transações e royalties.</p>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2 flex flex-col gap-6 lg:pl-12">
+<h2 class="font-headline-xl text-headline-xl text-primary-container">Parceria e Crescimento com a OpenClube</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Monetize sua capacidade ociosa e atraia novos clientes com inteligência. Além da venda direta, nossa tecnologia garante <span class="font-bold text-primary-container">1% de royalties em cada transação de revenda</span> dos seus títulos no mercado secundário da plataforma, criando um fluxo contínuo de receita.
+                    </p>
+<div class="pt-4">
+<button class="btn-primary px-8 py-4 rounded-xl font-label-sm w-fit">Quero ser parceiro e ganhar royalties</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- IMPACT PHRASE -->
+<div class="bg-surface-tint/5 border-y border-outline-variant/20 py-12">
+<div class="max-w-container-max mx-auto px-6 text-center">
+<p class="font-headline-md text-headline-md text-primary-container">"Economize hoje. Aproveite sempre. Lucre quando quiser."</p>
+</div>
+</div>
+<!-- 5. PARA USUÁRIOS -->
+<section class="py-section-padding bg-surface" id="usuarios">
+<div class="max-w-container-max mx-auto px-6">
+<div class="grid lg:grid-cols-2 gap-stack-lg items-center">
+<div class="flex flex-col gap-6 lg:pr-12">
+<h2 class="font-headline-xl text-headline-xl text-primary-container">Hábitos que geram ganhos e liberdade econômica</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Sua vida com mais experiências e inteligência financeira. Compre títulos de benefícios, use para viver momentos inesquecíveis ou negocie-os aproveitando a sua valorização de mercado.
+                    </p>
+<ul class="space-y-4 pt-4">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-surface-tint">check_circle</span>
+<span class="font-label-sm text-on-surface">Liberdade econômica total: usar ou lucrar</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-surface-tint">check_circle</span>
+<span class="font-label-sm text-on-surface">Valorização constante de títulos exclusivos</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-surface-tint">check_circle</span>
+<span class="font-label-sm text-on-surface">Negociação fácil, rápida e com liquidez</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-surface-tint">check_circle</span>
+<span class="font-label-sm text-on-surface">Acesso a ofertas restritas que poucos conseguem</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-surface-tint">check_circle</span>
+<span class="font-label-sm text-on-surface">Economia real nos seus estabelecimentos favoritos</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-surface-tint">check_circle</span>
+<span class="font-label-sm text-on-surface">Plataforma que recompensa bons hábitos de consumo</span>
+</li>
+</ul>
+<div class="pt-4">
+<button class="bg-surface-tint text-white px-8 py-4 rounded-xl font-label-sm w-fit hover:bg-opacity-90 transition-all">Começar a lucrar e economizar</button>
+</div>
+</div>
+<div class="relative">
+<!-- Bento Grid Style Display -->
+<div class="grid grid-cols-2 gap-4">
+<div class="glass-panel p-2 rounded-2xl col-span-2">
+<img alt="grupo de amigos sorrindo em um restaurante" class="w-full h-48 object-cover rounded-xl" data-alt="group of diverse young professionals laughing and enjoying a meal at a trendy modern restaurant with warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiquhn3-gJ4Kcaj2mZIII3fOm_LyzamB5J_-4F4_MLvQZDg1v2crzCkkeIiGUk76xKYR5AlRXOoH7-7_RVXsCSMut1MSMgjCCJRO6FMM4U0Fhro9Wv6GlYVJliNbtAuNEKKIIhw_OzOs7J16TS33krFAnRmHChuNmQnZy2cctwUz3_nlz4D91hnEfUk8D-jutZgOsmHhjsoB2q70xGIY54erwuh0N4zfNxMamN7voGS2_f2IFrvGGiLWjOV41HHpEUymCAiPEWYw"/>
+</div>
+<div class="glass-panel p-6 rounded-2xl flex flex-col justify-between aspect-square">
+<div class="w-12 h-12 bg-surface-container rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-surface-tint">trending_up</span>
+</div>
+<div>
+<p class="font-headline-md text-primary-container">+15% Val.</p>
+<p class="font-label-sm text-on-surface-variant text-sm">Título de Restaurante</p>
+</div>
+</div>
+<div class="glass-panel p-6 rounded-2xl flex flex-col justify-between aspect-square bg-primary-container text-white border-none">
+<div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-white">confirmation_number</span>
+</div>
+<div>
+<p class="font-headline-md text-white">Passe VIP</p>
+<p class="font-label-sm text-white/70 text-sm">Alta liquidez</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. CATEGORIAS -->
+<section class="py-section-padding" id="beneficios">
+<div class="max-w-container-max mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary-container mb-2">Encontre benefícios em diversas categorias</h2>
+<p class="font-body-md text-on-surface-variant">Uma rede completa para atender ao seu estilo de vida.</p>
+</div>
+<button class="btn-secondary px-6 py-2 rounded-lg font-label-sm whitespace-nowrap">Ver todas</button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+<!-- Card 1 -->
+<div class="glass-panel p-6 rounded-xl hover:-translate-y-1 transition-transform cursor-pointer group">
+<span class="material-symbols-outlined text-3xl text-surface-tint mb-4 group-hover:text-primary-container transition-colors">restaurant</span>
+<h3 class="font-label-sm text-primary-container mb-1">Restaurantes</h3>
+<p class="text-xs text-on-surface-variant font-medium">124 ofertas disponíveis</p>
+</div>
+<!-- Card 2 -->
+<div class="glass-panel p-6 rounded-xl hover:-translate-y-1 transition-transform cursor-pointer group">
+<span class="material-symbols-outlined text-3xl text-surface-tint mb-4 group-hover:text-primary-container transition-colors">fitness_center</span>
+<h3 class="font-label-sm text-primary-container mb-1">Academias</h3>
+<p class="text-xs text-on-surface-variant font-medium">86 ofertas disponíveis</p>
+</div>
+<!-- Card 3 -->
+<div class="glass-panel p-6 rounded-xl hover:-translate-y-1 transition-transform cursor-pointer group">
+<span class="material-symbols-outlined text-3xl text-surface-tint mb-4 group-hover:text-primary-container transition-colors">spa</span>
+<h3 class="font-label-sm text-primary-container mb-1">Beleza e Spa</h3>
+<p class="text-xs text-on-surface-variant font-medium">52 ofertas disponíveis</p>
+</div>
+<!-- Card 4 -->
+<div class="glass-panel p-6 rounded-xl hover:-translate-y-1 transition-transform cursor-pointer group">
+<span class="material-symbols-outlined text-3xl text-surface-tint mb-4 group-hover:text-primary-container transition-colors">medical_services</span>
+<h3 class="font-label-sm text-primary-container mb-1">Saúde</h3>
+<p class="text-xs text-on-surface-variant font-medium">93 ofertas disponíveis</p>
+</div>
+<!-- Card 5 -->
+<div class="glass-panel p-6 rounded-xl hover:-translate-y-1 transition-transform cursor-pointer group">
+<span class="material-symbols-outlined text-3xl text-surface-tint mb-4 group-hover:text-primary-container transition-colors">school</span>
+<h3 class="font-label-sm text-primary-container mb-1">Educação</h3>
+<p class="text-xs text-on-surface-variant font-medium">41 ofertas disponíveis</p>
+</div>
+<!-- Card 6 -->
+<div class="glass-panel p-6 rounded-xl hover:-translate-y-1 transition-transform cursor-pointer group">
+<span class="material-symbols-outlined text-3xl text-surface-tint mb-4 group-hover:text-primary-container transition-colors">flight_takeoff</span>
+<h3 class="font-label-sm text-primary-container mb-1">Turismo</h3>
+<p class="text-xs text-on-surface-variant font-medium">28 ofertas disponíveis</p>
+</div>
+<!-- Card 7 -->
+<div class="glass-panel p-6 rounded-xl hover:-translate-y-1 transition-transform cursor-pointer group">
+<span class="material-symbols-outlined text-3xl text-surface-tint mb-4 group-hover:text-primary-container transition-colors">build</span>
+<h3 class="font-label-sm text-primary-container mb-1">Serviços</h3>
+<p class="text-xs text-on-surface-variant font-medium">115 ofertas disponíveis</p>
+</div>
+<!-- Card 8 -->
+<div class="glass-panel p-6 rounded-xl hover:-translate-y-1 transition-transform cursor-pointer group">
+<span class="material-symbols-outlined text-3xl text-surface-tint mb-4 group-hover:text-primary-container transition-colors">attractions</span>
+<h3 class="font-label-sm text-primary-container mb-1">Lazer</h3>
+<p class="text-xs text-on-surface-variant font-medium">67 ofertas disponíveis</p>
+</div>
+<!-- Card 9 -->
+<div class="glass-panel p-6 rounded-xl hover:-translate-y-1 transition-transform cursor-pointer group">
+<span class="material-symbols-outlined text-3xl text-surface-tint mb-4 group-hover:text-primary-container transition-colors">devices</span>
+<h3 class="font-label-sm text-primary-container mb-1">Tecnologia</h3>
+<p class="text-xs text-on-surface-variant font-medium">34 ofertas disponíveis</p>
+</div>
+<!-- Card 10 -->
+<div class="glass-panel p-6 rounded-xl hover:-translate-y-1 transition-transform cursor-pointer group">
+<span class="material-symbols-outlined text-3xl text-surface-tint mb-4 group-hover:text-primary-container transition-colors">checkroom</span>
+<h3 class="font-label-sm text-primary-container mb-1">Moda</h3>
+<p class="text-xs text-on-surface-variant font-medium">89 ofertas disponíveis</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. DEPOIMENTOS (Social Proof) -->
+<section class="py-section-padding bg-surface-container-lowest border-y border-outline-variant/20" id="depoimentos">
+<div class="max-w-container-max mx-auto px-6">
+<div class="text-center mb-12">
+<h2 class="font-headline-lg text-headline-lg text-primary-container mb-4">O que dizem nossos membros</h2>
+<p class="font-body-lg text-on-surface-variant">Histórias reais de quem já revolucionou a forma como vê benefícios.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="glass-panel p-6 rounded-2xl flex flex-col gap-4">
+<div class="flex items-center gap-2 text-surface-tint mb-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-on-surface italic">"Como empresário, nunca vi nada igual. Vendo meus serviços e ainda ganho 1% sempre que os usuários negociam meus títulos entre eles. É uma receita passiva que ajudou no caixa."</p>
+<div class="mt-auto pt-4 flex items-center gap-3 border-t border-outline-variant/30">
+<div class="w-10 h-10 bg-primary-fixed-dim rounded-full flex items-center justify-center text-primary-container font-bold">R</div>
+<div>
+<p class="font-label-sm text-primary-container">Ricardo M.</p>
+<p class="text-xs text-on-surface-variant">Dono de Restaurante</p>
+</div>
+</div>
+</div>
+<div class="glass-panel p-6 rounded-2xl flex flex-col gap-4">
+<div class="flex items-center gap-2 text-surface-tint mb-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-on-surface italic">"Comprei um título de acesso VIP para uma casa noturna que não pude ir. Vendi na plataforma no mesmo dia e ainda lucrei 20% porque o evento estava esgotado. Sensacional!"</p>
+<div class="mt-auto pt-4 flex items-center gap-3 border-t border-outline-variant/30">
+<div class="w-10 h-10 bg-surface-tint text-white rounded-full flex items-center justify-center font-bold">A</div>
+<div>
+<p class="font-label-sm text-primary-container">Ana C.</p>
+<p class="text-xs text-on-surface-variant">Usuária OpenClube</p>
+</div>
+</div>
+</div>
+<div class="glass-panel p-6 rounded-2xl flex flex-col gap-4">
+<div class="flex items-center gap-2 text-surface-tint mb-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<p class="font-body-md text-on-surface italic">"A facilidade de uso do app é incrível. Recomendo para todos os meus amigos que querem ter vantagens reais sem a burocracia dos clubes de benefícios tradicionais."</p>
+<div class="mt-auto pt-4 flex items-center gap-3 border-t border-outline-variant/30">
+<div class="w-10 h-10 bg-secondary-container rounded-full flex items-center justify-center text-primary-container font-bold">M</div>
+<div>
+<p class="font-label-sm text-primary-container">Marcos T.</p>
+<p class="text-xs text-on-surface-variant">Investidor &amp; Usuário</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. CONTATO -->
+<section class="py-section-padding bg-surface" id="contato">
+<div class="max-w-container-max mx-auto px-6">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col gap-6">
+<h2 class="font-headline-lg text-headline-lg text-primary-container">Entre em Contato</h2>
+<p class="font-body-md text-on-surface-variant">
+                    Tem alguma dúvida sobre nossa tecnologia, parcerias ou como nossa inteligência de mercado funciona? Fale com nosso time de especialistas.
+                </p>
+<div class="flex flex-col gap-4 mt-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="font-label-sm text-primary-container">E-mail</p>
+<p class="text-sm text-on-surface-variant">contato@openclube.com.br</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<p class="font-label-sm text-primary-container">Telefone</p>
+<p class="text-sm text-on-surface-variant">+55 (83) 98228-5604</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<p class="font-label-sm text-primary-container">Endereço Sede</p>
+<p class="text-sm text-on-surface-variant">Av. Jornalista Assis Chateaubriand, 300, Sala 219 - Liberdade, Campina Grande - PB, 58414-060</p>
+</div>
+</div>
+</div>
+</div>
+<div class="glass-panel p-8 rounded-2xl relative">
+<h3 class="font-headline-md text-primary-container mb-6">Envie sua mensagem</h3>
+<form class="flex flex-col gap-4">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-on-surface-variant" for="nome">Nome Completo</label>
+<input class="px-4 py-3 rounded-lg border border-outline-variant bg-white focus:outline-none focus:ring-2 focus:ring-primary-container focus:border-transparent transition-all" id="nome" placeholder="Seu nome" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-on-surface-variant" for="email">E-mail Profissional</label>
+<input class="px-4 py-3 rounded-lg border border-outline-variant bg-white focus:outline-none focus:ring-2 focus:ring-primary-container focus:border-transparent transition-all" id="email" placeholder="seu@email.com" type="email"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-on-surface-variant" for="mensagem">Mensagem</label>
+<textarea class="px-4 py-3 rounded-lg border border-outline-variant bg-white focus:outline-none focus:ring-2 focus:ring-primary-container focus:border-transparent transition-all min-h-[120px] resize-y" id="mensagem" placeholder="Como podemos ajudar?"></textarea>
+</div>
+<button class="btn-primary py-3 rounded-lg font-label-sm mt-2 w-full" type="button">Enviar Mensagem</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- IMPACT PHRASE -->
+<div class="bg-primary-container py-8 overflow-hidden">
+<div class="max-w-container-max mx-auto px-6 text-center">
+<p class="font-headline-md text-headline-md text-white/90">"OpenClube — onde benefícios geram valor real"</p>
+</div>
+</div>
+<!-- 11. RODAPÉ (Footer) -->
+<footer class="w-full rounded-none border-t border-slate-200 dark:border-slate-800 flat no shadows bg-slate-50 dark:bg-[#002347]">
+<div class="max-w-7xl mx-auto py-12 px-6">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+<!-- Institucional -->
+<div class="flex flex-col gap-4">
+<a class="text-lg font-bold text-[#002347] dark:text-white flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">generating_tokens</span>
+                        OpenClube
+                    </a>
+<p class="text-xs text-slate-500 dark:text-slate-400 font-['Manrope']">Plataforma inovadora de conexão global e inteligência financeira que gera valor real através de benefícios.</p>
+</div>
+<!-- Para Empresas -->
+<div class="flex flex-col gap-3">
+<h4 class="font-label-sm text-[#002347] dark:text-white">Para empresas</h4>
+<a class="font-['Manrope'] text-xs font-medium text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#">Como ser parceiro</a>
+<a class="font-['Manrope'] text-xs font-medium text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#">Painel de Royalties</a>
+<a class="font-['Manrope'] text-xs font-medium text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#">Casos de Sucesso</a>
+</div>
+<!-- Para Usuários -->
+<div class="flex flex-col gap-3">
+<h4 class="font-label-sm text-[#002347] dark:text-white">Para usuários</h4>
+<a class="font-['Manrope'] text-xs font-medium text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#">Baixar o App</a>
+<a class="font-['Manrope'] text-xs font-medium text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#">Explorar Benefícios</a>
+<a class="font-['Manrope'] text-xs font-medium text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#">Como negociar títulos</a>
+</div>
+<!-- Redes Sociais -->
+<div class="flex flex-col gap-3">
+<h4 class="font-label-sm text-[#002347] dark:text-white">Conecte-se</h4>
+<div class="flex gap-4">
+<a class="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-primary-container hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+<a class="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-primary-container hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">photo_camera</span>
+</a>
+<a class="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-primary-container hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">work</span>
+</a>
+</div>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 pt-6 border-t border-slate-200 dark:border-slate-800">
+<p class="text-[#002347] dark:text-slate-300 font-['Manrope'] text-xs font-medium">© 2026 OpenClube. Tecnologia e Inteligência em Benefícios.</p>
+<div class="flex gap-4">
+<a class="font-['Manrope'] text-xs font-medium text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#">Termos de Uso</a>
+<a class="font-['Manrope'] text-xs font-medium text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#">Privacidade</a>
+<a class="font-['Manrope'] text-xs font-medium text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#">FAQ</a>
+</div></div></div></footer></body></html>
