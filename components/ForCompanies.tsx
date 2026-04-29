@@ -13,8 +13,7 @@ export default function ForCompanies() {
     {
       icon: "account_balance_wallet",
       title: "1% de Royalties em TUDO",
-      desc: "Receba 1% sobre TODAS as transações dos seus títulos, criando um ativo financeiro real para a empresa.",
-      mt: true
+      desc: "Receba 1% sobre TODAS as transações dos seus títulos, criando um ativo financeiro real para a empresa."
     },
     {
       icon: "loyalty",
@@ -24,8 +23,7 @@ export default function ForCompanies() {
     {
       icon: "payments",
       title: "Receita antecipada",
-      desc: "Gere caixa antes mesmo do cliente consumir o serviço.",
-      mt: true
+      desc: "Gere caixa antes mesmo do cliente consumir o serviço."
     },
     {
       icon: "public",
@@ -35,8 +33,7 @@ export default function ForCompanies() {
     {
       icon: "dashboard",
       title: "Gestão Financeira",
-      desc: "Painel inteligente para acompanhar não apenas vendas, mas o volume de transações e royalties.",
-      mt: true
+      desc: "Painel inteligente para acompanhar não apenas vendas, mas o volume de transações e royalties."
     }
   ];
 
@@ -53,7 +50,7 @@ export default function ForCompanies() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1, duration: 0.5 }}
-                  className={`glass-panel p-6 rounded-xl flex flex-col gap-4 ${feature.mt ? 'mt-8' : ''} hover:-translate-y-1 transition-transform h-full`}
+                  className="glass-panel p-6 rounded-xl flex flex-col gap-4 hover:-translate-y-1 transition-transform h-full"
                 >
                   <div className="w-10 h-10 bg-primary-fixed rounded-full flex items-center justify-center text-primary-container">
                     <span className="material-symbols-outlined">{feature.icon}</span>

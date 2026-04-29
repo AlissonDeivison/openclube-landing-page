@@ -56,7 +56,7 @@ export default function HowItWorks() {
               </div>
               <h3 className="font-headline-md text-headline-md text-primary-container">Jornada das Empresas</h3>
             </div>
-            <div className="space-y-6 relative before:absolute before:inset-0 before:ml-[15px] before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-outline-variant/50 before:to-transparent">
+            <div className="space-y-6 relative before:absolute before:inset-0 before:ml-[15px] before:-translate-x-px before:h-full before:w-0.5 before:bg-gradient-to-b before:from-outline-variant/50 before:to-transparent">
               <motion.div variants={itemVariants} className="relative flex items-start gap-4">
                 <div className="w-8 h-8 rounded-full bg-white border-2 border-primary-container text-primary-container flex items-center justify-center font-label-sm z-10 bg-clip-padding shrink-0">1</div>
                 <div>
@@ -102,7 +102,7 @@ export default function HowItWorks() {
               </div>
               <h3 className="font-headline-md text-headline-md text-primary-container">Jornada dos Usuários</h3>
             </div>
-            <div className="space-y-6 relative before:absolute before:inset-0 before:ml-[15px] before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-outline-variant/50 before:to-transparent">
+            <div className="space-y-6 relative before:absolute before:inset-0 before:ml-[15px] before:-translate-x-px before:h-full before:w-0.5 before:bg-gradient-to-b before:from-outline-variant/50 before:to-transparent">
               <motion.div variants={itemVariants} className="relative flex items-start gap-4">
                 <div className="w-8 h-8 rounded-full bg-white border-2 border-surface-tint text-surface-tint flex items-center justify-center font-label-sm z-10 bg-clip-padding shrink-0">1</div>
                 <div>
