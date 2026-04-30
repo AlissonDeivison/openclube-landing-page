@@ -66,6 +66,10 @@ export default function Contact() {
                 <input className="px-4 py-3 rounded-lg border border-outline-variant bg-white focus:outline-none focus:ring-2 focus:ring-primary-container focus:border-transparent transition-all" id="email" name="email" placeholder="seu@email.com" type="email" required />
               </div>
               <div className="flex flex-col gap-1">
+                <label className="font-label-sm text-on-surface-variant" htmlFor="whatsapp">WhatsApp</label>
+                <input className="px-4 py-3 rounded-lg border border-outline-variant bg-white focus:outline-none focus:ring-2 focus:ring-primary-container focus:border-transparent transition-all" id="whatsapp" name="whatsapp" placeholder="(00) 00000-0000" type="tel" required />
+              </div>
+              <div className="flex flex-col gap-1">
                 <label className="font-label-sm text-on-surface-variant" htmlFor="mensagem">Mensagem</label>
                 <textarea className="px-4 py-3 rounded-lg border border-outline-variant bg-white focus:outline-none focus:ring-2 focus:ring-primary-container focus:border-transparent transition-all min-h-[120px] resize-y" id="mensagem" name="mensagem" placeholder="Como podemos ajudar?" required></textarea>
               </div>
