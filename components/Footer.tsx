@@ -52,7 +52,7 @@ export default function Footer() {
           <p className="text-[#002347] dark:text-slate-300 font-['Manrope'] text-xs font-medium">© 2026 OpenClube. Tecnologia e Inteligência em Benefícios.</p>
           <div className="flex gap-4">
             <Link className="font-['Manrope'] text-xs font-medium text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#">Termos de Uso</Link>
-            <Link className="font-['Manrope'] text-xs font-medium text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="/politica_privacidade.pdf" target="_blank" rel="noopener noreferrer">Política de Privacidade</Link>
+            <Link className="font-['Manrope'] text-xs font-medium text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="/politica-de-privacidade">Política de Privacidade</Link>
             <Link className="font-['Manrope'] text-xs font-medium text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#">FAQ</Link>
           </div>
         </div>

@@ -27,7 +27,7 @@ export default function Navbar() {
           <div className="flex items-center gap-8">
             <Link
               className="flex items-center gap-2"
-              href="#"
+              href="/"
               onClick={closeMenu}
             >
               <img 
@@ -39,37 +39,37 @@ export default function Navbar() {
             <div className="hidden md:flex items-center gap-6">
               <Link
                 className="font-label-sm text-[#002347] border-b-2 border-[#002347] pb-1 hover:opacity-80 transition-all duration-200 whitespace-nowrap"
-                href="#inicio"
+                href="/#inicio"
               >
                 Início
               </Link>
               <Link
                 className="font-label-sm text-slate-600 hover:text-[#002347] transition-colors hover:opacity-80 duration-200 whitespace-nowrap"
-                href="#como-funciona"
+                href="/#como-funciona"
               >
                 Como Funciona
               </Link>
               <Link
                 className="font-label-sm text-slate-600 hover:text-[#002347] transition-colors hover:opacity-80 duration-200 whitespace-nowrap"
-                href="#empresas"
+                href="/#empresas"
               >
                 Para Empresas
               </Link>
               <Link
                 className="font-label-sm text-slate-600 hover:text-[#002347] transition-colors hover:opacity-80 duration-200 whitespace-nowrap"
-                href="#usuarios"
+                href="/#usuarios"
               >
                 Para Usuários
               </Link>
               <Link
                 className="font-label-sm text-slate-600 hover:text-[#002347] transition-colors hover:opacity-80 duration-200 whitespace-nowrap"
-                href="#beneficios"
+                href="/#beneficios"
               >
                 Benefícios
               </Link>
               <Link
                 className="font-label-sm text-slate-600 hover:text-[#002347] transition-colors hover:opacity-80 duration-200 whitespace-nowrap"
-                href="#contato"
+                href="/#contato"
               >
                 Contato
               </Link>
@@ -98,12 +98,12 @@ export default function Navbar() {
             className="md:hidden fixed top-20 left-0 w-full bg-white shadow-xl border-b border-slate-200 z-40 overflow-hidden"
           >
             <div className="flex flex-col px-6 py-4 gap-4">
-              <Link onClick={closeMenu} className="font-label-sm text-slate-600 hover:text-[#002347] py-2 border-b border-slate-100 transition-colors" href="#inicio">Início</Link>
-              <Link onClick={closeMenu} className="font-label-sm text-slate-600 hover:text-[#002347] py-2 border-b border-slate-100 transition-colors" href="#como-funciona">Como Funciona</Link>
-              <Link onClick={closeMenu} className="font-label-sm text-slate-600 hover:text-[#002347] py-2 border-b border-slate-100 transition-colors" href="#empresas">Para Empresas</Link>
-              <Link onClick={closeMenu} className="font-label-sm text-slate-600 hover:text-[#002347] py-2 border-b border-slate-100 transition-colors" href="#usuarios">Para Usuários</Link>
-              <Link onClick={closeMenu} className="font-label-sm text-slate-600 hover:text-[#002347] py-2 border-b border-slate-100 transition-colors" href="#beneficios">Benefícios</Link>
-              <Link onClick={closeMenu} className="font-label-sm text-slate-600 hover:text-[#002347] py-2 border-b border-slate-100 transition-colors" href="#contato">Contato</Link>
+              <Link onClick={closeMenu} className="font-label-sm text-slate-600 hover:text-[#002347] py-2 border-b border-slate-100 transition-colors" href="/#inicio">Início</Link>
+              <Link onClick={closeMenu} className="font-label-sm text-slate-600 hover:text-[#002347] py-2 border-b border-slate-100 transition-colors" href="/#como-funciona">Como Funciona</Link>
+              <Link onClick={closeMenu} className="font-label-sm text-slate-600 hover:text-[#002347] py-2 border-b border-slate-100 transition-colors" href="/#empresas">Para Empresas</Link>
+              <Link onClick={closeMenu} className="font-label-sm text-slate-600 hover:text-[#002347] py-2 border-b border-slate-100 transition-colors" href="/#usuarios">Para Usuários</Link>
+              <Link onClick={closeMenu} className="font-label-sm text-slate-600 hover:text-[#002347] py-2 border-b border-slate-100 transition-colors" href="/#beneficios">Benefícios</Link>
+              <Link onClick={closeMenu} className="font-label-sm text-slate-600 hover:text-[#002347] py-2 border-b border-slate-100 transition-colors" href="/#contato">Contato</Link>
             </div>
           </motion.div>
         )}
